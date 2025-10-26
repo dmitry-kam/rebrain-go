@@ -1,2 +1,6 @@
+.gitignore
+/.idea/modules.xml
+/.idea/rebrain-go.iml
+/.idea/vcs.xml
 bin/
 pkg/
