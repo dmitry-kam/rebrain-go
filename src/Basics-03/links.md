@@ -1,0 +1,3 @@
+- http://golang-book.ru/chapter-03-types.html
+- https://www.digitalocean.com/community/tutorials/how-to-convert-data-types-in-go-ru
+- https://timeweb.cloud/tutorials/go/konvertaciya-tipov-dannyh-v-go

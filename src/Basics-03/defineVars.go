@@ -233,6 +233,12 @@ func main() {
 	// Но в этом случае она в том же пакете, поэтому напрямую нельзя
 	// Вместо этого можно использовать другую функцию
 	showGlobal()
+
+	fmt.Println("\nResult:", 32132*42452)
+
+	var myByte byte = 'a'
+	var myRune rune = '♥'
+	fmt.Printf("%c = %d and %c = %U\n", myByte, myByte, myRune, myRune)
 }
 
 func showGlobal() {
