@@ -5,8 +5,10 @@ import (
 	"strconv"
 )
 
-var one = "104"
-var two = 35
+var (
+	one = "104"
+	two = 35
+)
 
 func main() {
 	convertedOne, _ := strconv.Atoi(one)

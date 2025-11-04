@@ -6,8 +6,11 @@ import (
 )
 
 func main() {
-	type AmericanVelocity float32
-	type EuropeanVelocity float32
+	type (
+		AmericanVelocity float32
+		EuropeanVelocity float32
+	)
+
 	const kmInMile float32 = 1.609344
 
 	var mPerSecond float32
