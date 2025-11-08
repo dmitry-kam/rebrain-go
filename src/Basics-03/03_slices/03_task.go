@@ -5,16 +5,16 @@ import (
 )
 
 func main() {
-	weekDays := []string{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}
-	fmt.Printf("Christian week %v\n", weekDays)
-	workingDays := make([]string, 5)
+	days := []string{"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}
+	fmt.Printf("Christian week %v\n", days)
+	weekDays := make([]string, 5)
 
-	copy(workingDays, weekDays[1:6])
-	weekDays = append(weekDays[6:], weekDays[:1]...)
+	copy(weekDays, days[1:6])
+	days = append(days[6:], days[:1]...)
 
-	fmt.Printf("Working days %v\n", workingDays)
-	fmt.Printf("Weekend: %v\n", weekDays)
+	fmt.Printf("Working days %v\n", weekDays)
+	fmt.Printf("Weekend: %v\n", days)
 
-	sovietWeek := append(workingDays, weekDays...)
+	sovietWeek := append(weekDays, days...)
 	fmt.Printf("Soviet week %v\n", sovietWeek)
 }

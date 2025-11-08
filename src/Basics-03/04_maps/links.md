@@ -1,0 +1,3 @@
+- https://habr.com/ru/articles/457728/
+- https://go.dev/blog/maps
+- https://medium.com/a-journey-with-go/go-concurrency-access-with-maps-part-iii-8c0a0e4eb27e
