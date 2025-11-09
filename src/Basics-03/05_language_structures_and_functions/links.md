@@ -1,0 +1,2 @@
+- https://www.calhoun.io/5-useful-ways-to-use-closures-in-go/
+- https://tleyden.github.io/blog/2016/12/20/understanding-function-closures-in-go/
