@@ -1,0 +1,5 @@
+- https://nuancesprog.ru/p/6940/
+- https://medium.com/golangspec/defer-statement-in-golang-part-i-8e658a2ea49a
+- https://blog.learngoprogramming.com/gotchas-of-defer-in-go-1-8d070894cb01
+- https://blog.learngoprogramming.com/5-gotchas-of-defer-in-go-golang-part-ii-cc550f6ad9aa
+- https://golangbot.com/read-files/
