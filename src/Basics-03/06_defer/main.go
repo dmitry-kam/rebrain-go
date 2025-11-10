@@ -10,7 +10,7 @@ import (
 func main() {
 	path := "f.txt"
 	getFile(path)
-	log()
+	showDefers()
 
 	// Main func execution: 2
 	// Deferred func call: 1
@@ -51,7 +51,7 @@ func getFile(path string) {
 	}
 }
 
-func log() {
+func showDefers() {
 	fmt.Println(0)
 	defer fmt.Println(1) // executed third
 	defer fmt.Println(2) // executed second
