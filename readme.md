@@ -48,7 +48,7 @@ rebrain-go/
     - Task: [05_task.go](src/Basics-03/05_language_structures_and_functions/05_task.go)
     - [Useful links](src/Basics-03/05_language_structures_and_functions/links.md)
 
-- [ ] **Block 06:** defer - Function Exit Handling
+- [x] **Block 06:** defer - Function Exit Handling
 - [ ] **Block 07:** Panic and Recovery
 - [ ] **Block 08:** Error Handling
 
