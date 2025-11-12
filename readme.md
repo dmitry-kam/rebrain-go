@@ -49,7 +49,7 @@ rebrain-go/
     - [Useful links](src/Basics-03/05_language_structures_and_functions/links.md)
 
 - [x] **Block 06:** defer - Function Exit Handling
-- [ ] **Block 07:** Panic and Recovery
+- [x] **Block 07:** Panic and Recovery
 - [ ] **Block 08:** Error Handling
 
 ### ⏳ Module 04: Modules and Packages
