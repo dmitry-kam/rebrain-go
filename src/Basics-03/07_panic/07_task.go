@@ -37,9 +37,7 @@ func main() {
 	defer func() {
 		if panicErr := recover(); panicErr != nil {
 			errMessage := fmt.Sprintf("%v", panicErr)
-
-			switch true {
-			case strings.Contains(errMessage, "parse error"):
+			if strings.Contains(errMessage, "parse error") {
 				fmt.Printf("\033[1;31m%s\033[0m\n", errMessage)
 			}
 
@@ -53,9 +51,9 @@ func main() {
 func closeFile(f *os.File) {
 	if err := f.Close(); err != nil {
 		fmt.Println(err)
-	} else {
-		fmt.Printf("\033[1;32mClosed file %s!\033[0m\n", f.Name())
+		return
 	}
+	fmt.Printf("\033[1;32mClosed file %s!\033[0m\n", f.Name())
 }
 
 func writeFormattedData(fR *os.File, fW *os.File) {
@@ -101,9 +99,8 @@ func getFormattedString(order int, line string) string {
 	fields := strings.Split(line, "|")
 	if len(fields) == 3 && validateFields(fields...) {
 		return fmt.Sprintf("%d\nName: %s\nAddress: %s\nCity: %s\n\n\n\n", order+1, fields[0], fields[1], fields[2])
-	} else {
-		panic(fmt.Sprintf("parse error: empty field on string %d\n", order+1))
 	}
+	panic(fmt.Sprintf("parse error: empty field on string %d\n", order+1))
 }
 
 func validateFields(fields ...string) bool {
