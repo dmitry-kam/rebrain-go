@@ -59,7 +59,7 @@ func countLines(f *os.File) (int, error) {
 
 		if err != nil {
 			if errors.Is(err, io.EOF) {
-				fmt.Printf("%s EOF\n", f.Name())
+				//fmt.Printf("%s EOF\n", f.Name())
 				break
 			}
 			return 0, fmt.Errorf("reading error: %w", err)
