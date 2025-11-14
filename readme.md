@@ -50,7 +50,7 @@ rebrain-go/
 
 - [x] **Block 06:** defer - Function Exit Handling
 - [x] **Block 07:** Panic and Recovery
-- [ ] **Block 08:** Error Handling
+- [x] **Block 08:** Error Handling
 
 ### ⏳ Module 04: Modules and Packages
 - [ ] **Block 01:** Scope, Initialization with init()
