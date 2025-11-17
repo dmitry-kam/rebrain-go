@@ -6,6 +6,8 @@
 > 
 >  mkdir ~/GolandProjects/rebrain-go
 > 
+>  echo "export GOPATH=~/GolandProjects/rebrain-go" >> ~/.profile
+> 
 >  echo 'export PATH=$PATH:/usr/local/go/bin' >> .profile
 > 
 >  echo "export GOPATH=~/GolandProjects/rebrain-go" >> ~/.profile
