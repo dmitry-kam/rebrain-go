@@ -26,3 +26,7 @@ go@linux:~/GolandProjects/rebrain-go$ unset GOPATH
   232  cd $GOPATH
   236  ./src/Basics-04/09_scopes_and_initialization/main 
 ```
+
+```text
+go get github.com/huandu/xstrings
+```
