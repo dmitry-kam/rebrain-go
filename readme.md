@@ -53,8 +53,8 @@ rebrain-go/
 - [x] **Block 08:** Error Handling
 
 ### ⏳ Module 04: Modules and Packages
-- [ ] **Block 01:** Scope, Initialization with init()
-- [ ] **Block 02:** Working with Dependencies, go mod
+- [x] **Block 01:** Scope, Initialization with init()
+- [x] **Block 02:** Working with Dependencies, go mod
 - [ ] **Block 03:** Creating Modules and Versioning
 - [ ] **Block 04:** Project Layout (Structure)
 
