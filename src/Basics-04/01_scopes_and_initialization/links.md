@@ -28,5 +28,12 @@ go@linux:~/GolandProjects/rebrain-go$ unset GOPATH
 ```
 
 ```text
+go mod tidy - clean unused
+go mod download - download dependencies without building project
+go mod vendor - storage of packages in project directory
+go build -mod vendor
+```
+
+```text
 go get github.com/huandu/xstrings
 ```
