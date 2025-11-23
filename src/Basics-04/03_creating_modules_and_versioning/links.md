@@ -1,0 +1,2 @@
+- https://habr.com/ru/articles/421411/
+- https://semver.org/lang/ru/
