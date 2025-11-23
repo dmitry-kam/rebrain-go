@@ -3,6 +3,7 @@
 /.idea/rebrain-go.iml
 /.idea/vcs.xml
 bin/
-pkg/
 /src/github.com/
 src/**/vendor/
+/src/Basics-04/04_project/project-layout/
+/pkg/
