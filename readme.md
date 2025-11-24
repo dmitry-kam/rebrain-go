@@ -55,8 +55,8 @@ rebrain-go/
 ### ⏳ Module 04: Modules and Packages
 - [x] **Block 01:** Scope, Initialization with init()
 - [x] **Block 02:** Working with Dependencies, go mod
-- [ ] **Block 03:** Creating Modules and Versioning
-- [ ] **Block 04:** Project Layout (Structure)
+- [x] **Block 03:** Creating Modules and Versioning
+- [x] **Block 04:** Project Layout (Structure)
 
 ### ⏳ Module 05: Structs and Interfaces
 - [ ] **Block 01:** Structs in Go
