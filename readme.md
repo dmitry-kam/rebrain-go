@@ -59,7 +59,7 @@ rebrain-go/
 - [x] **Block 04:** Project Layout (Structure)
 
 ### ⏳ Module 05: Structs and Interfaces
-- [ ] **Block 01:** Structs in Go
+- [x] **Block 01:** Structs in Go
 - [ ] **Block 02:** Struct Methods
 - [ ] **Block 03:** Interfaces and Duck Typing
 - [ ] **Block 04:** Empty Interface
