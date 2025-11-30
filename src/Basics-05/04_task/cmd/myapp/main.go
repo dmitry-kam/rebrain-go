@@ -6,17 +6,6 @@ import (
 	"myapp/internal"
 )
 
-type Printer interface {
-	print()
-}
-
-type A struct {
-}
-
-func (a *A) print() {
-	fmt.Println("Hello, playground")
-}
-
 func main() {
 	cust := internal.NewCustomer("Johnny", 23, 10000, 1000, true)
 	_ = startTransaction(cust)
