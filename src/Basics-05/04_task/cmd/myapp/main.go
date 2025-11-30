@@ -35,9 +35,9 @@ func startTransaction(debtor internal.Debtor) error {
 func startTransactionDynamic(d interface{}) error {
 	debtor, ok := d.(internal.Debtor)
 
-	if ok {
-		return startTransaction(debtor)
+	if !ok {
+		return errors.New("incorrect type")
 	}
 
-	return errors.New("incorrect type")
+	return startTransaction(debtor)
 }
