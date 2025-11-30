@@ -60,8 +60,8 @@ rebrain-go/
 
 ### ⏳ Module 05: Structs and Interfaces
 - [x] **Block 01:** Structs in Go
-- [ ] **Block 02:** Struct Methods
-- [ ] **Block 03:** Interfaces and Duck Typing
+- [x] **Block 02:** Struct Methods
+- [x] **Block 03:** Interfaces and Duck Typing
 - [ ] **Block 04:** Empty Interface
 - [ ] **Block 05:** Composite Inheritance
 - [ ] **Block 06:** Advanced Error Handling

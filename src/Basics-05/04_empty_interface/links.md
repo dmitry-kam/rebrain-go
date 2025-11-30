@@ -1,0 +1,2 @@
+- https://go.dev/doc/effective_go#type_switch
+- https://go.dev/doc/effective_go#interface_conversions
