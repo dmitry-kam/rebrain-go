@@ -1,0 +1,3 @@
+- https://go.dev/doc/effective_go#interfaces
+- https://en.wikipedia.org/wiki/Duck_typing
+- https://golang.org/doc/effective_go.html#pointers_vs_values
