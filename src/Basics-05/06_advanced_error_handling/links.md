@@ -1,0 +1,4 @@
+- https://go.dev/blog/go1.13-errors
+- https://medium.com/nuances-of-programming/golang-%D0%B8%D0%B7%D1%8F%D1%89%D0%BD%D0%B0%D1%8F-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA-b0db0c2131e8
+- https://www.digitalocean.com/community/tutorials/creating-custom-errors-in-go
+- https://medium.com/m/global-identity-2?redirectUrl=https%3A%2F%2Fitnext.io%2Fgolang-error-handling-best-practice-a36f47b0b94c
