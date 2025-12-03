@@ -25,14 +25,21 @@ func main() {
 	limit := 25
 	fR, err := getInFile()
 	if err != nil {
+		if _, ok := errors.Unwrap(err).(*os.SyscallError); ok {
+			log.Printf("currentDir is undefined: %s\n", err.Error())
+		} else if _, ok := errors.Unwrap(err).(*fs.PathError); ok {
+			log.Printf("can`t open file: %s\n", err.Error())
+		} else {
+			log.Println(err.Error())
+		}
 		return
 	}
 	defer closeFile(fR)
 
 	lineCount, err := countLines(fR, limit)
 	if err != nil {
-		if _, ok := err.(*limitExceeded); ok {
-			fmt.Println("string count exceed limit, please read another file =) err: ", err.Error())
+		if _, ok := errors.Unwrap(err).(*limitExceeded); ok {
+			fmt.Printf("string count exceed limit, please set another limit: %s", err.Error())
 			return
 		}
 		// other errors
@@ -62,7 +69,7 @@ func countLines(f *os.File, limit int) (int, error) {
 				//fmt.Printf("%s EOF\n", f.Name())
 				break
 			}
-			return 0, fmt.Errorf("reading error: %w", err)
+			return 0, fmt.Errorf("(wrapped reading error: %w)", err)
 		}
 	}
 
@@ -72,18 +79,16 @@ func countLines(f *os.File, limit int) (int, error) {
 func getInFile() (*os.File, error) {
 	const sourceSrc = "src/Basics-03/08_errors"
 	currentDir, err := os.Getwd()
-	if _, ok := err.(*os.SyscallError); ok {
-		log.Println("currentDir is undefined")
+	if err != nil {
 		return nil, err
 	}
 
 	rFilePath := filepath.Join(currentDir, sourceSrc, "data", "in.txt")
-
 	fR, err := os.Open(rFilePath)
-	if _, ok := err.(*fs.PathError); ok {
-		log.Println("Can`t open ", rFilePath)
-		return nil, err
+	if err != nil {
+		return nil, fmt.Errorf("(wrapped getInFile err: %w)", err)
 	}
+
 	return fR, nil
 }
 
