@@ -1,0 +1,5 @@
+- [ ] Repeat pointers 
+- [ ] Repeat panic 
+- [ ] Repeat errors ((un)wrappinhg,as,is) 
+- [ ] Repeat (empty) interfaces
+- [ ] Repeat inheritance
