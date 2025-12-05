@@ -21,23 +21,16 @@ func (l limitExceeded) Error() string {
 	return fmt.Sprintf("`%s`, limit: %d, last string: `%s`", l.message, l.limit, l.lastString)
 }
 
-func (l limitExceeded) Is(target error) bool {
-	t, ok := target.(*limitExceeded)
-	if !ok {
-		return false
-	}
-	return l.message == t.message &&
-		l.limit == t.limit &&
-		l.lastString == t.lastString
-}
-
 func main() {
 	limit := 25
 	fR, err := getInFile()
+	var fileNotFoundError *os.SyscallError
+	var filePathError *fs.PathError
+
 	if err != nil {
-		if _, ok := errors.Unwrap(err).(*os.SyscallError); ok {
+		if errors.As(err, &fileNotFoundError) {
 			log.Printf("currentDir is undefined: %s\n", err.Error())
-		} else if _, ok := errors.Unwrap(err).(*fs.PathError); ok {
+		} else if errors.As(err, &filePathError) {
 			log.Printf("can`t open file: %s\n", err.Error())
 		} else {
 			log.Println(err.Error())
@@ -48,12 +41,6 @@ func main() {
 
 	lineCount, err := countLines(fR, limit)
 	if err != nil {
-		var check *limitExceeded
-		check = &limitExceeded{message: "limit has been reached", limit: 25, lastString: "25,Caz,Capelle,ccapelleo@imageshack.us,Male,137.199.85.33\n"}
-		if errors.Is(err, check) {
-			fmt.Printf("check Is()\n")
-		}
-		///
 		if errors.As(err, &limitExceeded{}) {
 			fmt.Printf("\u001B[1;31mstring count exceed limit, please set another limit:\u001B[0m %s\n", err.Error())
 			return
