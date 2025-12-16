@@ -1,5 +1,5 @@
-- [ ] Repeat pointers 
-- [ ] Repeat panic 
-- [ ] Repeat errors ((un)wrappinhg,as,is) 
-- [ ] Repeat (empty) interfaces
-- [ ] Repeat inheritance
+- [x] Repeat pointers 
+- [x] Repeat panic 
+- [x] Repeat errors ((un)wrappinhg,as,is) 
+- [x] Repeat (empty) interfaces
+- [x] Repeat inheritance
