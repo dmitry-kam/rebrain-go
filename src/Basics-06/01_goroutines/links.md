@@ -1,0 +1,3 @@
+- https://go.dev/tour/concurrency/1
+- https://golangdocs.com/goroutines-in-golang
+- https://gobyexample.com/goroutines
