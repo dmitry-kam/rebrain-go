@@ -111,9 +111,9 @@ rebrain-go/
 - [x] **Block 06:** Advanced Error Handling
 
 ### ⏳ Module 06: Concurrency
-- [ ] **Block 01:** Goroutines
-- [ ] **Block 02:** Go Scheduler
-- [ ] **Block 03:** Race Conditions
+- [x] **Block 01:** Goroutines
+- [x] **Block 02:** Go Scheduler
+- [x] **Block 03:** Race Conditions
 - [ ] **Block 04:** sync and atomic Packages
 - [ ] **Block 05:** Channels pt.1. Deadlocks
 - [ ] **Block 06:** Channels pt.2. Context
